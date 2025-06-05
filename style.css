@@ -40,6 +40,10 @@ header{
     border-radius: 50%;
     border: 1px solid #ddd;
 }
+.categories a{
+    text-decoration: none;
+    text-align: center;
+}
 .categories img:hover{
     box-shadow: 0 4px 10px rgb(0, 0,0,0.1);
 }
@@ -48,14 +52,73 @@ header{
     font-weight: bold;
     font-size: 0.9rem;
 }
-.images{
+/*.articles{
     display: flex;
     justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
    
 }
-.images img{
+.articles img{
      width: 120px;
     height: 160px;
+}*/
+.welcom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 30px;
+}
+.welcom img{
+    width: 500px;
+    height: auto;
+}
+.welcom p{
+    text-align: left;
+    max-width: 400px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: normal;
+    color: #555;
+}
+.welcom h2{
+    font-size: 50px;
+    font-weight: 100px;
+    color:#333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.articles{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 100%px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.articles img{
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.articles button :hover{
+    background-color: maroon;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
 }
