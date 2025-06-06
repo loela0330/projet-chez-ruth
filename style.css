@@ -1,3 +1,4 @@
+/* debut de la mis en forme de la page d'acceuil*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -52,23 +53,17 @@ header{
     font-weight: bold;
     font-size: 0.9rem;
 }
-/*.articles{
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
-    flex-wrap: wrap;
-   
-}
-.articles img{
-     width: 120px;
-    height: 160px;
-}*/
 .welcom{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
     gap: 30px;
+    background-color: #fdf1e7;
+    padding: 40px;
+    border-radius: 10px;
+    margin:  auto;
+    max-width: 1180px;
 }
 .welcom img{
     width: 500px;
@@ -106,8 +101,8 @@ header{
     overflow-x: hidden;
 }
 .articles img{
-    width: 200px;
-    height: 180px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     display: flex;
     gap: 20px;
@@ -117,8 +112,72 @@ header{
 .articles button :hover{
     background-color: maroon;
 }
+/* fin de la mis en forme de la page d'acceuil*/
 
-.article img {
+.header-connexion{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    
+    border-bottom: 1px solid #eee;
+}
+.header-connexion a {
+    text-decoration: none;
+    font-size: 24px;
+    color:white;
+}
+.header-connexion h1{
+    margin:0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+form{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fdf1e7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0,0,0.1);
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+}
+form p{
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #111;
+    font-weight: 500;
+}
+input[type="email"],input[type="password"]{
     width: 100%;
-    height: auto;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+button[type="submit"]{
+    width: 100%;
+    padding:12px;
+    background-color: #111;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button [type="submit"]{
+    background-color: #333;
+}
+h2{
+    text-align: center;
 }
