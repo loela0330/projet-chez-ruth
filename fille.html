@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chez RUTH - Boutique en ligne</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-      <h1>chez Ruth</h1>
+      <div class="header-cont">
+      <h1>CHEZ RUTH</h1>
       <nav>
-        <ul>
-          <li>accueil</li>
+        <ul class="nav-liens">
+          <li><a href="index.html">accueil</a></li>
           <li><a href="contact.html">contact</a></li>
           <li><a href="connexion.html">se connecter</a></li>
           <li><a href="apropos.html">A propos</a></li>
         </ul>
       </nav>
+      </div>
     </header>
       <main>
-        <h2>ENFANT</h2>
-        <section>
+        <h2>Fille</h2>
           <h2>Découvrir nos catégories</h2>
-          <div class="categories">
-            <img src="image/enfant/garçon/cargot.jpg">
-            <img src="image/enfant/fille/ensemble1.jpg">
-          </div>
+          <div class="categories-grid">
+          <section class="categories">
+            <a href="garçon.html">
+            <img src="image/enfant/garçon/cargot.jpg" alt="enfant garçon">
+            <p>Garçon</p>
+            </a>
+            </div>
         </section>
-        <section>
-          <div>
-            <img src="image/image-homme/lacoste1.jpg" alt="lacoste">
-            <img src="image/image-homme/lacoste2.jpg" alt="lacoste">
-            <img src="image/image-homme/lacoste3.jpg" alt="lacoste">
-          </div>
-        </section>
-        <section>
-          <p>vetement pour femme</p>
-          <div>
-            <img src="image/image-femme/ensemble1.jpg" alt="ensemble">
-            <img src="image/image-femme/ensemble2.jpg" alt="ensemble">
-            <img src="image/image-femme/ensemble3.jpg" alt="ensemble">
-          </div>
-        </section>
-        <section>
-          <p>vetement pour enfant</p>
+        <section class="articles">
+            <div class="article">
+              <img src="image/enfant/fille/cullotte1.jpg" alt="CULLOTE">
+              <h3>CULLOTE</h3>
+              <P>Prix: 25$ </P>
+              <button>Ajouter</button>
+            </div><br>
+            <div class="article">
+              <img src="image/enfant/fille/jupe.jpg" alt="UNE JUPE">
+              <h3>UN JUPE</h3>
+              <P>Prix: 35$ </P>
+              <button>Ajouter</button>
+            </div><br>
+            <div class="article">
+              <img src="image/enfant/fille/pantalon1.jpg" alt="UN PANTALON">
+              <h3>PANTALON</h3>
+              <P>Prix: 30$ </P>
+              <button>Ajouter</button>
+            </div>
+            <div class="article">
+              <img src="image/enfant/fille/jupe2.jpg" alt="UNE jupe">
+              <h3>JUPE </h3>
+              <P>Prix: 50$ </P>
+              <button>Ajouter</button>
+            </div>
+            <div class="article">
+              <img src="image/enfant/fille/jeans.jpg" alt="UN PANTALON JEANS">
+              <h3>PANTALON JEANS</h3>
+              <P>Prix: 75$ </P>
+              <button>Ajouter</button>
+            </div>
+            <div class="article">
+              <img src="image/enfant/fille/ensemble1.jpg" alt="UN ensemble">
+              <h3>UN ENSEMBLE</h3>
+              <P>Prix: 120$ </P>
+              <button>Ajouter</button>
+            </div>
         </section>
       </main>
     </header>

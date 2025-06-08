@@ -30,28 +30,31 @@ header{
 .categories-grid{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2em;
     margin-top: 1.5rem;
 }
-
+.categories a{
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
 .categories img{
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid #ddd;
+    transition: transform 0.3s ease , box-shadow 0.3 ease;
 }
-.categories a{
-    text-decoration: none;
-    text-align: center;
+.categories img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgb(0, 0,0,0.2);
 }
-.categories img:hover{
-    box-shadow: 0 4px 10px rgb(0, 0,0,0.1);
-}
-.categories-item p{
+.categories a p{
     margin-top: 0.5rem;
     font-weight: bold;
     font-size: 0.9rem;
+    color: #111;
 }
 .welcom{
     display: flex;
@@ -63,7 +66,7 @@ header{
     padding: 40px;
     border-radius: 10px;
     margin:  auto;
-    max-width: 1180px;
+    max-width: 100%;
 }
 .welcom img{
     width: 500px;
@@ -93,28 +96,53 @@ header{
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
     max-width: 100%;
     overflow-x: hidden;
 }
-.articles img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.article{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgb(0, 0,0,0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
 }
-.articles img{
+.article:hover{
+    transform: scale(1.03);
+}
+.article img{
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
-.articles button :hover{
+.article h3{
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.article p{
+    margin: 5px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.article button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.article button:hover{
     background-color: maroon;
 }
 /* fin de la mis en forme de la page d'acceuil*/
@@ -212,8 +240,8 @@ header{
     background-color: #555;
     padding: 20px;
     margin: 30px auto;
-    max-width: 1180px;
-    border-radius: 10px;
+    max-width: 100%;
+    
     font-family: arial,sans-serif;
 }
 .Autres h3{
@@ -228,4 +256,38 @@ header{
     margin: 8px 0;
     font-size: 16px;
     color: #333;
+}
+/* fin du style de la page contact*/
+
+/*style de la page a propos*/
+.apropos{
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #fdf1e7;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgb(0, 0,0,0.1);
+}
+.apropos h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.apropos section{
+    color: #111;
+    margin-bottom: 30px;
+}
+.apropos p, .apropos ul{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.apropos ul{
+    padding-left: 20px;
+}
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
 }
