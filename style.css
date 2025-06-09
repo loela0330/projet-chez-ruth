@@ -239,9 +239,8 @@ header{
 .Autres{
     background-color: #555;
     padding: 20px;
-    margin: 30px auto;
+    margin: 0px auto;
     max-width: 100%;
-    
     font-family: arial,sans-serif;
 }
 .Autres h3{
