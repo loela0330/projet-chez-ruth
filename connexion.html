@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>chez RUTH - Boutique en ligne</title>
 </head>
 <body>
     <header class="header-connexion">
-      <h1><a href="index.html">CHEZ RUTH</a></h1>
+      <a href="index.html" class="site-lien">
+        <img src="image/icone/logo du site.png" alt="Logo Chez Ruth" 
+        class="site-logo"><h1 class="site-title">CHEZ RUTH</h1>
+        </a>
     </header>
     <main>
         <h2>connexion</h2>
@@ -18,13 +22,15 @@
                 <p>
                     <label for="email">Adresse e-mail:</label><br>
                     <input type="email" id="email" name="email" required/>
+                    <span id="email_m"></span><br>
                 </p>
                 <p>
                     <label for="password">Mot de passe :</label><br>
                     <input type="password" id="password" name="password" required/>
+                    <span id="password"></span><br>
                 </p>
                 <p>
-                    <button type="submit">contunier</button>
+                    <button type="submit" id="valider">contunier</button>
                 </p>
                 <p>vous n'avez pas de compte? <a href="nouveau compte.html">créer un compte</a></p>
             </fieldset>

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>chez RUTH - Boutique en ligne</title>
 </head>
 <body>
     <header>
       <div class="header-contact">
-      <h1>chez Ruth</h1>
+        <div class="brand">
+          <img src="image/icone/logo du site.png" alt="Logo Chez Ruth" class="site-logo"><h1 class="site-title">CHEZ RUTH</h1>
+        </div>
       <nav>
         <ul class="nav-contact">
           <li><a href=index.html>acceuil</a></li>
@@ -28,18 +31,21 @@
                   <p>
                     <label for="nom">Nom:</label><br>
                     <input type="text" id="nom" name="nom" required/>
+                    <span id="nom_m"></span><br>
                   </p>
                   <p>
                     <label for="email">e-mail :</label><br>
-                    <input type="email" id="email1" name="email" required/>
+                    <input type="email" id="email" name="email" required/>
+                    <span id="email_m"></span><br>
                   </p>
                   <p>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="5" cols="30"
                      minlength="20" maxlength="500" required></textarea>
+                     <span id="message_m"></span><br>
                   </p>
                   <p>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" id="valider">Envoyer</button>
                   </p>
             </fieldset>
         </form>

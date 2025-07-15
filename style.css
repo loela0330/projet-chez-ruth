@@ -18,6 +18,38 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo { 
+ height: 90px;
+ width: auto;
+ 
+ justify-content: center;
+ align-items: center;
+ border: 1px solid black;
+}
+.site-title{
+  display: inline;       /* ou inline-block si tu veux gérer largeur/hauteur */
+  margin: 0;
+  line-height: 1;
+
+}
+
+.site-lien{
+display: flex;           /* active flexbox */
+  align-items: center;     /* centre verticalement logo & titre */
+  justify-content: center; /* centre horizontalement le groupe dans son parent */
+  gap: 0.3rem;             /* espace minimal entre le logo et le titre */
+  text-decoration: none;
+  color: inherit;
+
+}
+
+
+
 .nav-liens{
     list-style: none;
     display: flex;
@@ -92,10 +124,11 @@ header{
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    width: 100%px;
+    width: 100%;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -110,7 +143,7 @@ header{
     width: 250px;
     padding: 15px;
     text-align: center;
-    transition: transform 0.2s ease;
+    transition:  0.2s ease;
 }
 .article:hover{
     transform: scale(1.03);
@@ -140,7 +173,7 @@ header{
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition:  0.2s ease;
 }
 .article button:hover{
     background-color: maroon;
@@ -151,7 +184,6 @@ header{
     text-align: center;
     padding: 20px 0;
     background-color: #111;
-    
     border-bottom: 1px solid #eee;
 }
 .header-connexion a {
@@ -206,7 +238,7 @@ button[type="submit"]{
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition:  0.3s ease;
 }
 button [type="submit"]{
     background-color: #333;
@@ -226,6 +258,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header-cont img{
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0px;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.header-cont h1{
+    margin: 0;
+    padding: 0;
 }
 .nav-contact{
     list-style: none;
@@ -291,9 +336,90 @@ footer{
     font-size: 0.9rem;
 }
 
-.icone-panier{
+li a img.icone-panier{
     width: 50px;
     height: auto;
     vertical-align: middle;
     color: #eee;
+}
+
+/* ---------- Styles panier encapsulés ---------- */
+
+/* Conteneur global pour isoler le style */
+#pannier {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdf1e7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#main h2 {
+  font-size: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+#cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+  color: #444;
+}
+
+#cart-list li:last-child {
+  border-bottom: none;
+}
+
+#cart-total {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: bold;
+}
+
+#clear-cart,
+#cart-list button.remove-item {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:  0.2s ease;
+  margin-left: 0.5rem;
+}
+
+#clear-cart:hover,
+#cart-list button.remove-item:hover {
+  background-color: maroon;
+}
+#foot{
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* Ajustement mobile */
+@media (max-width: 500px) {
+  #cart-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #cart-list button.remove-item {
+    margin: 0.5rem 0 0 0;
+  }
 }

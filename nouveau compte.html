@@ -9,7 +9,11 @@
 </head>
 <body>
     <header class="header-connexion">
-      <h1><a href="index.html">CHEZ RUTH</a></h1>
+      <a href="index.html" class="site-lien">
+        <img src="image/icone/logo du site.png" alt="Logo Chez Ruth" 
+        class="site-logo"><h1 class="site-title">CHEZ RUTH</h1>
+        </a>
+    </header>
     </header>
     <main>
         
@@ -25,21 +29,25 @@
             <p>
                 <label for="text">NOM :</label><br>
                 <input type="text" id="nom" name="text" required maxlength="20"/>
+                <span id="nom_m"></span><br>
             </p>
             <p>
                 <label for="email">ADRESSE E-MAIL :</label><br>
                 <input type="email" id="email" name="email" required/>
+                <span id="email_m"></span><br>
             </p>
             <p>
                 <label for="password">MOT DE PASSE :</label><br>
                 <input type="password" id="password" name="password" required/>
+                <span id="password_m"></span><br>
             </p>
             <p>
                 <label for="password">CONFIRMATION DU MOT DE PASSE :</label><br>
-                <input type="password" id="confirmationpassword" name="password" required/>
+                <input type="password" id="confirmpassword" name="password" required/>
+                <span id="confirmpassword_m"></span><br>
             </p>
             <p>
-                <button type="submit" id="boutton_envoi">contunier</button>
+                <button type="submit" id="valider">contunier</button>
             </p>
             </fieldset>
         </form>
