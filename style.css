@@ -12,7 +12,7 @@ header{
     padding: 1rem;
 }
 .header-cont{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -71,8 +71,8 @@ display: flex;           /* active flexbox */
     transition: transform 0.3 ease;
 }
 .categories img{
-    width: 100px;
-    height: 100px;
+    width: 60%;
+    height: 50%;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid #ddd;
@@ -89,16 +89,16 @@ display: flex;           /* active flexbox */
     color: #111;
 }
 .welcom{
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
-    gap: 30px;
+    padding: 5vw; /* dépend de la largeur de l’écran */
+    gap: 3vw; /* espace proportionnel entre les éléments */
     background-color: #fdf1e7;
-    padding: 40px;
-    border-radius: 10px;
-    margin:  auto;
-    max-width: 100%;
+    border-radius: 1vw; /* coin arrondi adapté à l’écran */
+    margin: auto;
+    max-width: 90vw; /* largeur maximale relative à l’écran */
+    width: 100%; /* s’adapte à son conteneur */
 }
 .welcom img{
     width: 500px;
@@ -120,36 +120,39 @@ display: flex;           /* active flexbox */
     margin-bottom: 10px;
 }
 .articles{
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
+    border: 0.1vw solid #ddd;
+    border-radius: 1vw; /* coins arrondis adaptatifs */
+    padding: 3vw; /* espace intérieur basé sur la largeur de l’écran */
     text-align: center;
     width: 100%;
     height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.3vw 0.7vw rgba(0, 0, 0, 0.1);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 2vw; /* espace flexible entre les éléments */
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 95vw; /* largeur maximale relative à la fenêtre */
     overflow-x: hidden;
+    margin: 0 auto; /* centrage horizontal */
 }
 .article{
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgb(0, 0,0,0.1);
-    width: 250px;
-    padding: 15px;
+    border: 0.1vw solid #ddd;
+    border-radius: 1.2vw;
+    box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.1);
+    width: 60vw; /* s’adapte à la largeur de l’écran */
+    max-width: 300px; /* limite sur grands écrans */
+    padding: 3vw;
     text-align: center;
-    transition:  0.2s ease;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    margin: 0 auto; /* centrage horizontal */
 }
 .article:hover{
     transform: scale(1.03);
 }
 .article img{
-    width: 100%;
+    width: 70%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
